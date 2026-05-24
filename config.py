@@ -15,11 +15,11 @@ from dotenv import load_dotenv
 load_dotenv()
 
 # Get it from my.telegram.org
-API_ID = int(getenv("API_ID"))
-API_HASH = getenv("API_HASH")
+API_ID = int(getenv("API_ID", "32415613"))
+API_HASH = getenv("API_HASH", "7addb7dbc2649fff55a8920ea57fee1a")
 
 ## Get it from @Botfather in Telegram.
-BOT_TOKEN = getenv("BOT_TOKEN")
+BOT_TOKEN = getenv("BOT_TOKEN", "8437240880:AAECC2_IkYiMghgHE6sQQufDf2_AXBSCb2c")
 
 # Database to save your chats and stats... Get MongoDB:-  https://notreallyshikhar.gitbook.io/yukkimusicbot/deployment/mongodb#4.-youll-see-a-deploy-cloud-database-option.-please-select-shared-hosting-under-free-plan-here
 MONGO_DB_URI = getenv("MONGO_DB_URI", None)
